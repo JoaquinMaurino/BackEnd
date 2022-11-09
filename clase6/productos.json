@@ -1,0 +1,18 @@
+[{
+    "name": "Gorro",
+    "thumbnail": "url",
+    "price": 4000,
+    "id": 1
+  },
+  {
+    "name": "Borcegos",
+    "thumbnail": "url",
+    "price": 5000,
+    "id": 2
+  },
+  {
+    "name": "Camisa",
+    "thumbnail": "url",
+    "price": 4500,
+    "id": 3
+  }]
