@@ -43,7 +43,7 @@ return newObj
 
 
 deleteById(id){
-return true
+this.products = this.products.filter(product  => product.id !== Number(id))
 }
 }
 

@@ -36,8 +36,10 @@ router.put('/:id', (req, res)=>{
 
 
 router.delete('/:id', (req, res)=>{
-    res.send('DELETE id')
+    const id = req.params.id
+    res.send(container.deleteById(id))
 })
+
 
 
 
