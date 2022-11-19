@@ -7,6 +7,22 @@
     <title>Desafio 4</title>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <form action="/api/productos" method="post">
+        <div>
+          <label for="title">Nombre del producto:</label>
+          <input type="text" name="title" id="title" required />
+        </div>
+        <div>
+          <label for="price">Precio del producto:</label>
+          <input type="number" name="price" id="price" required />
+        </div>
+        <div>
+          <label for="thumbnail">URL del thumbnail:</label>
+          <input type="url" name="thumbnail" id="thumbnail" required />
+        </div>
+        <div>
+          <input type="submit" value="Guardar" />
+        </div>
+      </form>
 </body>
 </html>

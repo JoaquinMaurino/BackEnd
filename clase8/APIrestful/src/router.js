@@ -22,13 +22,16 @@ router.get('/:id', (req, res)=>{
 
 router.post('/', (req, res)=>{
     const obj = req.body;
-    const newObj = container.create(obj)
-    res.send(newObj)
+    const newProduct = container.create(obj)
+    res.send(newProduct)
 })
 
 
 router.put('/:id', (req, res)=>{
-    res.send('PUT id')
+    const id = req.params.id;
+    const obj = req.body
+    const updatedProduct = container.updateById(parseInt(id), obj);
+    res.send(updatedProduct)
 })
 
 

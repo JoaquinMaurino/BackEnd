@@ -27,7 +27,18 @@ create(obj) {
   }
 
 updateById(id, obj){
-return true
+
+const foundObj = this.products.find(product => product.id === id)
+if (foundObj){
+const filterProducts = this.products.filter(
+product => product.id !== id
+);
+const newObj = {id, ...obj};
+this.products = [...filterProducts, newObj];
+return newObj
+}else{
+  return Error
+}
 }
 
 
